@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola landing page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle">
+        </div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Menu</li>
+                <li><a href="#"></a>About Us</li>
+                <li><a href="#"></a>Contact Us</li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Taste the Feeling</h2>
+                <p>Welcome to our Coca-Cola paradise! Dive into a world of refreshing choices with our wide selection of Coca-Cola products. Whether you crave the classic taste of Original Coca-Cola, the zing of Diet Coke, or the excitement of exotic flavors like Cherry or Vanilla, we've got something to quench every thirst. Explore our range of Coca-Cola beverages and discover your perfect sip. From classic cans to sleek bottles and even special edition releases, we've got it all. Indulge your taste buds and satisfy your cola cravings right here. Cheers to choice, and feel the journey!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="cocacola1.png"></div>
+                        <div class="swiper-slide"><img src="cocacola2.png"></div>
+                        <div class="swiper-slide"><img src="cocacola3.png"></div>
+                        <div class="swiper-slide"><img src="cocacola4.png"></div>
+                        <div class="swiper-slide"><img src="cocacola5.png"></div>
+                        <div class="swiper-slide"><img src="cocacola6.png"></div>
+                        <div class="swiper-slide"><img src="cocacola7.png"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" width="50px"></a></li>
+            <li><a href="#"><img src="twitter.png" width="50px"></a></li>
+            <li><a href="#"><img src="instagram.png" width="50px"></a></li>
+            <li><a href="#"><img src="whatsapp.png" width="50px"></a></li>
+        </ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 150,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop:true,
+        });
+      </script>
+</body>
+</html>
